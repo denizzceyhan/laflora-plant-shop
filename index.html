@@ -1,0 +1,108 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LaFlora Plant</title>
+        <link rel="stylesheet" href="syle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rochester&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">    
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+    <body>
+        <main class="wrapper">
+         <!-- -------------- NAVBAR ---------------- -->
+         <section id="home" class="anasayfa">
+        <header>
+                <div class="brand">
+                    <div class="brand-content">
+                        La Flora
+                        <img src="assets/images/planticon.png" alt="LaFlora Icon" class="brand-icon">
+                    </div>
+                    <p class="brand-tagline">Yeşilin İçindeki Huzur</p>
+                </div>
+                <nav class="navbar">
+                <ul>
+                    <li><a href="#home" class="nav-link active-link">Anasayfa</a></li>
+                    <li><a href="#products" class="nav-link">Ürünler</a></li>
+                    <li> <a href="#about" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li><a href="#contact" class="nav-link">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
+<!-- -------------- arama ---------------- -->
+<div class="search-container">
+    <img src="assets/images/searchicon.png" alt="Ara" class="search-icon">
+    <input type="text" placeholder="Aradığınız bitkiyi hemen bulun!" class="search-input">
+</div>
+</section>
+<!-- ------------ DIVIDER ----------- -->
+<div class="section-divider"></div>
+
+<!-- -------------- ÜRÜNLER ---------------- -->
+<section class="products" id="products">
+    <div class="container mx-auto text-center py-10">
+      <div class="flex items-center justify-center gap-4 mb-10">
+        <img src="assets/images/roots.png" alt="LaFlora Icon" class="w-10 h-10">
+        <h2 class="text-3xl font-bold text-green-800">Ürünler</h2>
+      </div>
+      <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+    </div>
+  </section>
+  
+<!-- -------------- HAKKINDA ---------------- -->
+<section id="about" class="bg-green-50 py-16 px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      <div class="flex items-center justify-center gap-4 mb-6">
+        <img src="assets/images/roots.png" alt="LaFlora Icon" class="w-10 h-10">
+        <h2 class="text-3xl font-bold text-green-800">Hakkımızda</h2>
+      </div>
+  
+      <p class="text-gray-700 text-lg leading-relaxed">
+        laFlora, doğayla yeniden bağ kurmak isteyen herkes için kuruldu. Bitkilerin iyileştirici gücüne inanıyor ve evinizi daha yaşanabilir hale getirecek en özel bitkileri sizinle buluşturuyoruz. <br><br>
+        Her bir bitki, sevgiyle seçildi ve özenle bakıldı. Sadece bir ürün değil, yeni bir yaşam tarzı sunmak istiyoruz. <br><br>
+        laFlora olarak amacımız, her eve bir parça doğa getirmek. Çünkü doğa, huzurdur. 🌿
+      </p>
+    </div>
+  </section>
+  <!-- ----------- İLETİŞİM ----------- -->
+  <section class="contact bg-green-50 py-16 px-6 text-center" id="contact">
+    <div class="max-w-3xl mx-auto">
+      <div class="flex items-center justify-center gap-4 mb-10">
+        <img src="assets/images/roots.png" alt="LaFlora Icon" class="w-10 h-10">
+        <h2 class="text-3xl font-bold text-green-800">İletişim</h2>
+      </div>
+  
+      <p class="text-gray-700 text-lg leading-relaxed mb-6">
+        Bizimle iletişime geçmek isterseniz her zaman buradayız! Ürünlerimizle ilgili sorularınız, önerileriniz veya iş birliği talepleriniz için bize ulaşabilirsiniz.  
+        <br><br>
+        💌 E-posta: <a href="mailto:info@laflora.com" class="text-green-700 underline">info@laflora.com</a> <br>
+        📍 Konum: İstanbul, Türkiye
+      </p>
+  
+      <!-- İletişim Formu -->
+      <div class="bg-white p-6 rounded-lg shadow-lg mx-auto max-w-lg">
+        <h3 class="text-xl font-semibold text-green-800 mb-4">Bize Mesaj Gönderin</h3>
+        <form action="#" method="POST" class="space-y-6">
+          <input type="text" name="name" placeholder="Adınız" class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+          <input type="email" name="email" placeholder="E-posta Adresiniz" class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+          <textarea name="message" placeholder="Mesajınız" rows="4" class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+          <button type="submit" class="w-full p-3 bg-green-700 text-white rounded-lg hover:bg-green-800">Gönder</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+
+
+
+</main>
+<script src="script.js"></script>
+</body>
+</html> 
